@@ -45,10 +45,10 @@ void MotorController::emergencyBreak()
 
 void MotorController::setSpeed(int speed)
 {
- _Engine.write(speed);
+ _Engine.write(90+(speed));
 }
 
 void MotorController::setAngle(int degrees)
 {
- _Steering.write(degrees);
+ _Steering.write(90+(degrees));
 }
